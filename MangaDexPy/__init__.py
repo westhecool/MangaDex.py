@@ -46,10 +46,12 @@ class NoResultsError(MDException):
 
 class MangaDex:
     """Represents the MangaDex API Client."""
-    def __init__(self):
+    def __init__(self, proxy: str = None):
         self.api = "https://api.mangadex.org"
         self.net_api = "https://api.mangadex.network"
         self.session = requests.Session()
+        if proxy:
+            self.session.proxies.update({"http": proxy, "https": proxy})
         self.session.headers["Authorization"] = ""
         self.login_success = False
         self.session_token = None

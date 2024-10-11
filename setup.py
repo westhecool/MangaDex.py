@@ -21,6 +21,7 @@ setup(name='MangaDex.py',
       license='MIT',
       install_requires=[
             'requests>=2.25.0',
+            'requests[socks]>=2.25.0'
       ],
       classifiers=[
             'License :: OSI Approved :: MIT License',
