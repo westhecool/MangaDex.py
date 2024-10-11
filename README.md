@@ -24,9 +24,9 @@ cli.login("username", "password")
 # Get manga with id b9797c5b-642e-44d9-ac40-8b31b9ae110a.
 manga = cli.get_manga("b9797c5b-642e-44d9-ac40-8b31b9ae110a")
 
-print(manga.title + "'s latest volume:")
+print(manga.title["en"] + "'s latest volume:")
 print(manga.last_volume)
-print(manga.title + "'s latest chapter:")
+print(manga.title["en"] + "'s latest chapter:")
 print(manga.last_chapter)
 ````
 Here's the terminal output:  
