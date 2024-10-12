@@ -125,3 +125,4 @@ dmypy.json
 
 # JetBrains IDE
 .idea/
+test.py
